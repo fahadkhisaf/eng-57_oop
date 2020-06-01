@@ -26,3 +26,6 @@ class is always capital
 ### Abstration
 - good naming 
 - good documentation 
+
+
+### polymorthism
