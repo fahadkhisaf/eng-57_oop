@@ -14,7 +14,7 @@ class Cat():
         self.age = 12
         self.paws = 4
         self.fur = 'luxurious orange fur'
-
+        self.breed = 'ginger cat'
 
     # this is a method that can be used by a Cat instance
     def meow(self, person = ''):
