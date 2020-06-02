@@ -1,11 +1,13 @@
 from student_monster import *
 
 class Course:
-    def __init__(self, module_name, start_date, list_of_students=[], skill_list = []):
+    def __init__(self, module_name, start_date, list_of_students= None):
+        if list_of_students is None:
+            list_of_students = []
         self.module_name = module_name
         self.list_of_students = list_of_students
         self.start_date = start_date
-        self.skill_list = skill_list
+
 
     def add_student(self, student):
         self.list_of_students.append(student)
@@ -17,7 +19,5 @@ class Course:
             all_students += f'{student.get_name()}, '
         return all_students
 
-    def add_skill(self):
-        for student in self.list_of_students:
-            self.skill_list.append(student.skill_list)
+
 
