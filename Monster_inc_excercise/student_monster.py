@@ -1,7 +1,7 @@
-from monster_characteristics import Monster
+from monster_characteristics import *
 
-class student(Monster):
-    def __init__(self, name, tax_number, fur, student_no, skill_list):
+class Student(Monster):
+    def __init__(self, name, tax_number, fur, student_no, skill_list=[]):
         super().__init__(name, tax_number, fur)
         self.__student_no = student_no
         self.skill_list = skill_list
@@ -21,6 +21,11 @@ class student(Monster):
         for skill in self.skill_list:
             all_skills += f'{skill}, '
         return all_skills
+
+
+
+
+
 
 
 
