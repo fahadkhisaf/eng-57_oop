@@ -1,27 +1,25 @@
 # Intro to OOP  
 
-What is OOP,
-Why OOP. 
+# What is OOP,
+Objects are collections of data that share attributes and methods that can be used or manipulate 
+and access certain functional requirements at certain times rather than access all the functions at all times.
 
-How to OOP
+# Why OOP. 
+Stops the program running redundant lines of code that it is not using, and makes hte code more readable by separating the
+main run code from the functions that operate in the background, making it easier for users and other developers to navigate the
+code.
 
 ### Learning outcomes: 
 - 
 
 ### Class
-What is a class? A class is like a cookie cutter or blue print for objects but not the object itself. 
-
-What can you do with a cookie? 
-    -   eat it!
+Almost everything in Python is an object, with its properties and methods.
+A Class is like an object constructor, or a "blueprint" for creating objects.
     
 ### methods 
 The actions or how an object behaves. 
 
 So in the above example, .eat_cookie() could be a method inside the class Cookie
-
-
-### Instance
-What is an instance? 
 
 ### syntax
 ```python
@@ -39,46 +37,27 @@ class Dog():
 ```
 
 ### Convention
-
+When creating a class make sure the first letter of the class is capitalised.
 
 ## OOP 4 Pillars
 
-### Inheritance
-The ability of a subclass to inherit all the behaviour and method from parent class. 
-One of the core reasons to use OOP, because it means you write less code. In reality this is debatable, has you end-up having to adapt a lot of methods. It also depends how good of a coder you are and ability to abstract effectivly. 
-
 ### Abstration 
-- good naming
-- good documentation - mention what methods and how to use them
-- use of inheritance 
-
+Hiding the real implementation of an app from the user and emphaising only how 
+to use the application. 
 
 #### Polymorthism
-- what is class polymorthism?
-- what is method polymorthism?
-
+Polymorphism in python defines methods in the child class that have the same name as the methods in the parent class.
 
 #### Encapsulation 
 The ability to limit access from the exterior to method and or attributes.
 Hence, making them 'private'. 
 
-```python
-class Dog():
+### Inheritance
+The ability of a subclass to inherit all the behaviour and method from parent class. 
+One of the core reasons to use OOP, because it means you write less code. In reality this is debatable, has you end-up having to adapt a lot of methods. 
+It also depends how good of a coder you are and ability to abstract effectivly. 
 
-    def __init__(self, dog_name, attri2):
-        self.name = attri1,
-        self.attribute_2 = attri2,
-        self.dog_years = 0,
-        self.human_years = 0
 
-    def dog_birthday_incrementer(self):
-        # complex block
-        #  celebrate the dog's bithday 
-        # update human year
-        # update dog years
-        print(f'happy birthday! You are a GOOD BOY! GOOD BOY {self.name}!')
-        return self.dog_years 
-```
 
 
 
